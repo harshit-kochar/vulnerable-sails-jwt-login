@@ -12,3 +12,8 @@ This is a simple Single-Page App (SPA) that loads a single view (view/main.ejs) 
 * `api/controllers/UserController.js` contains the back-end code for signing up and logging in users, including creating new JWTs.
 * `api/policies/isAuthenticated.js` contains the code for authenticating a user via JWT, and redirecting unauthorized users to the login page
 * `api/policies/checkForUser.js` is similar to `isAuthenticated.js`, but allows logged-out users to continue.  This is useful for things like the home page, which can display a customized welcome message to logged-in users but should be available to everyone.
+
+
+### Exploit
+
+> https://www.chosenplaintext.ca/2015/03/31/jwt-algorithm-confusion.html
